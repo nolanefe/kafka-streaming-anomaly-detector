@@ -35,4 +35,4 @@ for message in consumer:
         
         # If the model can't reconstruct the data well, it's an anomaly
         if loss.item() > 0.15: 
-            print(f"🚨 ALERT: High-loss traffic detected! IP: {log_data['ip']} | Loss: {loss.item():.4f}")
+            print(f" ALERT: High-loss traffic detected! IP: {log_data['ip']} | Loss: {loss.item():.4f}")
